@@ -18,7 +18,7 @@ type HeroSectionClientProps = {
   hasVideo: boolean;
 };
 
-const SHOW_HERO_VIDEO = false;
+const SHOW_HERO_VIDEO = true;
 const SHOW_HERO_MEDIA_OVERLAY = true;
 
 export function HeroSectionClient({ hasVideo }: HeroSectionClientProps) {
@@ -174,18 +174,17 @@ function VideoHero({ onPlaybackFailure, showVideo = true }: VideoHeroProps) {
         <video
           aria-hidden="true"
           autoPlay
-          className="hero-zoom-effect absolute inset-0 size-full object-cover object-center brightness-[0.95] contrast-[1.04] saturate-[1.05]"
+          className="hero-zoom-effect absolute inset-0 size-full object-cover object-center brightness-[0.96] contrast-[1.03] saturate-[1.05]"
           loop
           muted
           onCanPlay={handleCanPlay}
           onError={onPlaybackFailure}
           playsInline
-          poster="/images/hero/hero-legado-familiar.png"
-          preload="metadata"
+          preload="auto"
           tabIndex={-1}
         >
-          <source src="/videos/afinitive-hero-contrast.mp4" type="video/mp4" />
-          <source src="/videos/afinitive-hero.mp4" type="video/mp4" />
+          <source src="/videos/Afinitive-web01-Final.mp4" type="video/mp4" />
+          <source src="/videos/Afinitive-web01.mp4" type="video/mp4" />
         </video>
       ) : null}
       {showVideo && SHOW_HERO_MEDIA_OVERLAY ? (
