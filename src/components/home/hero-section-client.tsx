@@ -153,8 +153,8 @@ function HeroKeyFigureBadge({ carousel = false }: { carousel?: boolean }) {
           <path d="m6.5 12 3.4 3.4L17.5 8" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
-      <strong data-pulsing={isPulsing}>{`+${visibleValue}M`}</strong>
-      <span>USD</span>
+      <strong data-pulsing={isPulsing}>{`+${visibleValue}`}</strong>
+      <span>Millones USD</span>
       <small>Montos colocados</small>
     </aside>
   );
