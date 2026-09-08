@@ -201,10 +201,6 @@ function VideoHero({ onPlaybackFailure, showVideo = true }: VideoHeroProps) {
           >
             Preservando tu patrimonio
           </h1>
-          <span className="mt-5 h-px w-20 bg-white/80 lg:mt-4" aria-hidden="true" />
-          <p className="mt-4 text-lg leading-7 tracking-[0.08em] !text-white [text-shadow:0_2px_14px_rgba(0,0,0,0.6)] sm:text-xl font-medium">
-            Servicio de asesoría objetiva e integral | Tailor – Made
-          </p>
           <div className="video-hero-details mt-7 max-w-2xl self-start text-left text-foreground-inverse">
             <p className="text-xl leading-8 !text-white [text-shadow:0_2px_14px_rgba(0,0,0,0.6)] sm:text-[1.35rem] sm:leading-9 font-normal">
               Transformamos la complejidad financiera en decisiones eficientes
@@ -260,10 +256,6 @@ function HeroCarousel() {
           >
             Preservando tu patrimonio
           </h1>
-          <span className="mt-5 h-px w-20 bg-white/70" aria-hidden="true" />
-          <p className="mt-4 text-lg leading-7 tracking-[0.08em] !text-white sm:text-xl">
-            Servicio de asesoría objetiva e integral | Tailor – Made
-          </p>
           <div className="mt-7 max-w-2xl">
             <p className="text-xl leading-8 !text-white/95 sm:text-[1.35rem] sm:leading-9">
               Transformamos la complejidad financiera en decisiones eficientes
