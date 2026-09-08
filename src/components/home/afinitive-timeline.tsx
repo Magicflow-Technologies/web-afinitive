@@ -22,71 +22,156 @@ const loopedTimeline = Array.from(
 
 function getMilestoneSilhouette(year: string) {
   if (year.includes("2002")) {
-    // Banking / Corporate Pillars silhouette
+    // Banking & Institutional Columns Architectural Line Art
     return (
       <svg
-        className="h-11 w-11 text-[#8b5149] transition-transform duration-300 group-hover:scale-110"
+        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
         fill="none"
-        viewBox="0 0 24 24"
+        viewBox="0 0 320 160"
         stroke="currentColor"
-        strokeWidth="1.3"
+        strokeWidth="0.8"
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M3 10h18M5 10v11M9 10v11M13 10v11M17 10v11M12 3L2 10h20L12 3z" />
+        <line x1="10" y1="150" x2="310" y2="150" />
+        <rect x="30" y="40" width="120" height="110" />
+        <line x1="30" y1="60" x2="150" y2="60" />
+        <line x1="30" y1="80" x2="150" y2="80" />
+        <line x1="30" y1="100" x2="150" y2="100" />
+        <line x1="30" y1="120" x2="150" y2="120" />
+        <line x1="50" y1="40" x2="50" y2="150" />
+        <line x1="70" y1="40" x2="70" y2="150" />
+        <line x1="90" y1="40" x2="90" y2="150" />
+        <line x1="110" y1="40" x2="110" y2="150" />
+        <line x1="130" y1="40" x2="130" y2="150" />
+        <polygon points="30,40 90,15 150,40" />
+        <rect x="170" y="20" width="100" height="130" />
+        <line x1="170" y1="45" x2="270" y2="45" />
+        <line x1="170" y1="70" x2="270" y2="70" />
+        <line x1="170" y1="95" x2="270" y2="95" />
+        <line x1="170" y1="120" x2="270" y2="120" />
+        <line x1="195" y1="20" x2="195" y2="150" />
+        <line x1="220" y1="20" x2="220" y2="150" />
+        <line x1="245" y1="20" x2="245" y2="150" />
       </svg>
     );
   }
   if (year === "2018") {
-    // Afinitive Tree / Sprout silhouette
+    // Boutique Headquarters & Tree Line Architectural Drawing
     return (
       <svg
-        className="h-11 w-11 text-[#8b5149] transition-transform duration-300 group-hover:scale-110"
+        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
         fill="none"
-        viewBox="0 0 24 24"
+        viewBox="0 0 320 160"
         stroke="currentColor"
-        strokeWidth="1.3"
+        strokeWidth="0.8"
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-5m0 0a4 4 0 10-4-4 4 4 0 004 4zm0 0a4 4 0 104-4 4 4 0 00-4 4zm-7-2a7 7 0 1114 0H5z" />
+        <line x1="10" y1="150" x2="310" y2="150" />
+        <rect x="40" y="30" width="130" height="120" />
+        <line x1="40" y1="55" x2="170" y2="55" />
+        <line x1="40" y1="80" x2="170" y2="80" />
+        <line x1="40" y1="105" x2="170" y2="105" />
+        <line x1="40" y1="130" x2="170" y2="130" />
+        <line x1="72" y1="30" x2="72" y2="150" />
+        <line x1="105" y1="30" x2="105" y2="150" />
+        <line x1="138" y1="30" x2="138" y2="150" />
+        <path d="M240 150 V90 M240 110 L210 80 M240 100 L265 75 M240 85 L225 65 M240 80 L250 65" />
+        <circle cx="240" cy="55" r="28" strokeDasharray="3 3" />
+        <circle cx="215" cy="75" r="18" strokeDasharray="3 3" />
+        <circle cx="265" cy="70" r="16" strokeDasharray="3 3" />
       </svg>
     );
   }
   if (year === "2021") {
-    // Growth Chart & Shield / Securitization
+    // Step-Down Skyscraper & Structuring Campus Drawing
     return (
       <svg
-        className="h-11 w-11 text-[#8b5149] transition-transform duration-300 group-hover:scale-110"
+        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
         fill="none"
-        viewBox="0 0 24 24"
+        viewBox="0 0 320 160"
         stroke="currentColor"
-        strokeWidth="1.3"
+        strokeWidth="0.8"
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <line x1="10" y1="150" x2="310" y2="150" />
+        <rect x="60" y="10" width="110" height="140" />
+        <rect x="170" y="70" width="100" height="80" />
+        <line x1="82" y1="10" x2="82" y2="150" />
+        <line x1="104" y1="10" x2="104" y2="150" />
+        <line x1="126" y1="10" x2="126" y2="150" />
+        <line x1="148" y1="10" x2="148" y2="150" />
+        <line x1="60" y1="30" x2="170" y2="30" />
+        <line x1="60" y1="50" x2="170" y2="50" />
+        <line x1="60" y1="70" x2="170" y2="70" />
+        <line x1="60" y1="90" x2="170" y2="90" />
+        <line x1="60" y1="110" x2="170" y2="110" />
+        <line x1="60" y1="130" x2="170" y2="130" />
+        <line x1="195" y1="70" x2="195" y2="150" />
+        <line x1="220" y1="70" x2="220" y2="150" />
+        <line x1="245" y1="70" x2="245" y2="150" />
+        <line x1="170" y1="90" x2="270" y2="90" />
+        <line x1="170" y1="110" x2="270" y2="110" />
+        <line x1="170" y1="130" x2="270" y2="130" />
       </svg>
     );
   }
   if (year === "2025") {
-    // Global Investment / Internationalization
+    // Global Financial Skyline & Orbital Grid Line Art
     return (
       <svg
-        className="h-11 w-11 text-[#8b5149] transition-transform duration-300 group-hover:scale-110"
+        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
         fill="none"
-        viewBox="0 0 24 24"
+        viewBox="0 0 320 160"
         stroke="currentColor"
-        strokeWidth="1.3"
+        strokeWidth="0.8"
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        <line x1="10" y1="150" x2="310" y2="150" />
+        <rect x="30" y="40" width="60" height="110" />
+        <line x1="30" y1="65" x2="90" y2="65" />
+        <line x1="30" y1="90" x2="90" y2="90" />
+        <line x1="30" y1="115" x2="90" y2="115" />
+        <line x1="60" y1="40" x2="60" y2="150" />
+        <rect x="100" y="15" width="70" height="135" />
+        <line x1="100" y1="40" x2="170" y2="40" />
+        <line x1="100" y1="65" x2="170" y2="65" />
+        <line x1="100" y1="90" x2="170" y2="90" />
+        <line x1="100" y1="115" x2="170" y2="115" />
+        <line x1="123" y1="15" x2="123" y2="150" />
+        <line x1="147" y1="15" x2="147" y2="150" />
+        <circle cx="235" cy="80" r="45" />
+        <ellipse cx="235" cy="80" rx="45" ry="18" />
+        <ellipse cx="235" cy="80" rx="18" ry="45" />
       </svg>
     );
   }
-  // "Hoy" - Excellence Award / Star Emblem
+  // "Hoy" - Flagship Corporate Campus Building Elevation (Exact match to reference photo)
   return (
     <svg
-      className="h-11 w-11 text-[#8b5149] transition-transform duration-300 group-hover:scale-110"
+      className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
       fill="none"
-      viewBox="0 0 24 24"
+      viewBox="0 0 320 160"
       stroke="currentColor"
-      strokeWidth="1.3"
+      strokeWidth="0.8"
     >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+      <line x1="10" y1="150" x2="310" y2="150" />
+      <rect x="50" y="10" width="100" height="140" />
+      <rect x="150" y="60" width="120" height="90" />
+      <line x1="70" y1="10" x2="70" y2="150" />
+      <line x1="90" y1="10" x2="90" y2="150" />
+      <line x1="110" y1="10" x2="110" y2="150" />
+      <line x1="130" y1="10" x2="130" y2="150" />
+      <line x1="50" y1="28" x2="150" y2="28" />
+      <line x1="50" y1="46" x2="150" y2="46" />
+      <line x1="50" y1="64" x2="150" y2="64" />
+      <line x1="50" y1="82" x2="150" y2="82" />
+      <line x1="50" y1="100" x2="150" y2="100" />
+      <line x1="50" y1="118" x2="150" y2="118" />
+      <line x1="50" y1="136" x2="150" y2="136" />
+      <line x1="150" y1="80" x2="270" y2="80" />
+      <line x1="150" y1="100" x2="270" y2="100" />
+      <line x1="150" y1="120" x2="270" y2="120" />
+      <line x1="150" y1="138" x2="270" y2="138" />
+      <line x1="174" y1="60" x2="174" y2="150" />
+      <line x1="198" y1="60" x2="198" y2="150" />
+      <line x1="222" y1="60" x2="222" y2="150" />
+      <line x1="246" y1="60" x2="246" y2="150" />
     </svg>
   );
 }
