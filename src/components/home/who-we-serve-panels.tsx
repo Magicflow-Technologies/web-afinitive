@@ -24,7 +24,7 @@ export function WhoWeServePanels({ groups }: WhoWeServePanelsProps) {
       data-visible={isRevealed}
       className="who-we-serve-reveal scroll-reveal scroll-reveal--fade-left overflow-hidden bg-background scroll-mt-28 sm:scroll-mt-32"
     >
-      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:gap-14 lg:px-12 lg:py-28">
+      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:gap-10 lg:px-12 lg:py-14">
         <div className="scroll-reveal-stagger flex max-w-3xl flex-col gap-6">
           <span className="h-px w-16 bg-accent-muted/55" aria-hidden="true" />
           <h2

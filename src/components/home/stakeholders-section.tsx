@@ -115,7 +115,7 @@ export function StakeholdersSection() {
       data-visible={isRevealed}
       className="stakeholders-reveal scroll-reveal scroll-reveal--fade-left overflow-hidden bg-surface"
     >
-      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-12 px-5 py-18 sm:px-8 sm:py-22 lg:gap-14 lg:px-12 lg:py-28">
+      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start lg:gap-14">
           <div className="flex flex-col">
             <h2

@@ -15,7 +15,7 @@ export function HistoryIntroSection() {
       data-visible={isRevealed}
       className="history-intro-reveal scroll-reveal scroll-reveal--fade-right overflow-hidden bg-surface"
     >
-      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-12 px-5 pt-22 sm:px-8 sm:pt-26 lg:gap-14 lg:px-12 lg:pt-32">
+      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-6 px-5 pt-8 sm:px-8 sm:pt-10 lg:gap-8 lg:px-12 lg:pt-12">
         <div className="grid gap-9 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)_auto] lg:items-start lg:gap-12">
           <div className="scroll-reveal-stagger flex flex-col gap-6">
             <span

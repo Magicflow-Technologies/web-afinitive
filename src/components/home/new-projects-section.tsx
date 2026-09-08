@@ -75,7 +75,7 @@ export function NewProjectsSection() {
       data-visible={isRevealed}
       className="new-projects-reveal scroll-reveal overflow-hidden bg-surface scroll-mt-28 sm:scroll-mt-32"
     >
-      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-12 px-5 py-18 sm:px-8 sm:py-22 lg:gap-14 lg:px-12 lg:py-28">
+      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex max-w-3xl flex-col gap-6">
             <span className="h-px w-16 bg-accent-muted/55" aria-hidden="true" />

@@ -187,7 +187,7 @@ export function KeyFiguresSection() {
       data-visible={isRevealed}
       className="key-figures-reveal scroll-reveal border-t border-border-soft/70 bg-background"
     >
-      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-12 px-5 py-18 sm:px-8 sm:py-22 lg:px-12 lg:py-26">
+      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-8 px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
         <div className="flex flex-col gap-6">
           <span className="h-px w-16 bg-accent-muted/55" aria-hidden="true" />
           <h2
@@ -202,7 +202,7 @@ export function KeyFiguresSection() {
           {keyFigures.map((figure, index) => (
             <div
               key={`${figure.value}-${figure.unit}`}
-              className="scroll-reveal-stagger border-t border-border-soft/80 py-7"
+              className="scroll-reveal-stagger border-t border-border-soft/80 py-4"
             >
               <div className="flex items-end gap-3">
                 <dt

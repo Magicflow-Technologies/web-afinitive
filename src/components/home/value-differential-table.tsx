@@ -97,7 +97,7 @@ export function ValueDifferentialTable({
       data-visible={isRevealed}
       className="value-differential-reveal scroll-reveal scroll-reveal--fade-right overflow-hidden bg-background"
     >
-      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-10 px-5 py-20 sm:px-8 sm:py-24 lg:gap-12 lg:px-12 lg:py-28">
+      <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-6 px-5 py-10 sm:px-8 sm:py-12 lg:gap-8 lg:px-12 lg:py-14">
         <div className="flex flex-col gap-6">
           <span className="h-px w-16 bg-accent-muted/55" aria-hidden="true" />
           <h2

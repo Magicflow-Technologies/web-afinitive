@@ -39,7 +39,7 @@ export function PioneerApproachSection() {
       data-visible={isRevealed}
       className="pioneer-approach-reveal scroll-reveal relative isolate overflow-hidden bg-background"
     >
-      <div className="relative mx-auto w-full max-w-[88rem] px-5 py-22 sm:px-8 sm:py-26 lg:px-12 lg:py-32">
+      <div className="relative mx-auto w-full max-w-[88rem] px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
         <div className="pioneer-layout">
           <div className="pioneer-content">
             <span className="h-px w-20 bg-background-dark/55" aria-hidden="true" />

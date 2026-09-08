@@ -47,7 +47,7 @@ export function AboutSection() {
         />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-[88rem] gap-14 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.2fr)] lg:gap-20 lg:px-12 lg:py-32">
+      <div className="relative mx-auto grid w-full max-w-[88rem] gap-10 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.2fr)] lg:gap-12 lg:px-12 lg:py-16">
         <div className="scroll-reveal-stagger flex flex-col gap-8 lg:justify-between lg:py-5 lg:pr-8">
           <div className="flex flex-col gap-7">
             <span

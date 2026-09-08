@@ -115,7 +115,7 @@ export function ConversationSectionClient({
       data-visible={isRevealed}
       className="conversation-reveal scroll-reveal scroll-reveal--fade-left overflow-hidden bg-surface scroll-mt-28 sm:scroll-mt-32"
     >
-      <div className="mx-auto grid w-full max-w-[92rem] gap-10 px-5 py-18 sm:px-8 sm:py-22 lg:grid-cols-[minmax(0,0.92fr)_minmax(26rem,1.08fr)] lg:items-center lg:gap-14 lg:px-12 lg:py-28">
+      <div className="mx-auto grid w-full max-w-[92rem] gap-10 px-5 py-10 sm:px-8 sm:py-12 lg:grid-cols-[minmax(0,0.92fr)_minmax(26rem,1.08fr)] lg:items-center lg:gap-10 lg:px-12 lg:py-14">
         <div className="scroll-reveal-stagger flex max-w-2xl flex-col gap-7">
           <span className="h-px w-16 bg-accent-muted/55" aria-hidden="true" />
           <h2

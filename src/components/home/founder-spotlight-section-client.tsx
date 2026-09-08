@@ -48,7 +48,7 @@ export function FounderSpotlightSectionClient({
       data-visible={isRevealed}
       className="founder-spotlight-reveal scroll-reveal scroll-reveal--fade-right overflow-hidden bg-surface"
     >
-      <div className="mx-auto w-full max-w-[92rem] px-5 py-18 sm:px-8 sm:py-22 lg:px-12 lg:py-28">
+      <div className="mx-auto w-full max-w-[92rem] px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
         <figure
           className={`founder-spotlight-figure scroll-reveal-stagger ${isExpanded ? "is-expanded" : ""}`}
         >
