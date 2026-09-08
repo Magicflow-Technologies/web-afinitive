@@ -50,6 +50,13 @@ export const metadata: Metadata = {
   title: "Afinitive | Preservando tu patrimonio",
   description:
     "Asesoría patrimonial objetiva e integral para preservar, ordenar y acompañar decisiones sobre tu patrimonio.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "256x256" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

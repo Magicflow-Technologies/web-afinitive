@@ -4,7 +4,7 @@ export const sectionNavigation = {
   aQuienesServimos: "#a-quienes-servimos",
   nuevosProyectos: "#nuevos-proyectos",
   conversemos: "#conversemos",
-  oficinas: null,
+  oficinas: "#oficinas",
   publicaciones: null,
   mercados: null,
   masAllaDeLosMercados: null,

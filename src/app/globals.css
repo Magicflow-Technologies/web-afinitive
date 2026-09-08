@@ -257,6 +257,7 @@ main h3 {
   font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: none !important;
+  text-align: justify;
 }
 
 .site-footer-link,
@@ -265,6 +266,7 @@ main h3 {
   color: var(--color-body) !important;
   font-size: 1.16rem !important;
   line-height: 1.62 !important;
+  text-align: justify;
 }
 
 .site-footer-link[aria-disabled="true"],
@@ -421,6 +423,23 @@ main > section.hero-blackout {
 
 .hero-reveal {
   animation: hero-enter 900ms ease-out 120ms both;
+}
+
+@keyframes hero-ken-burns {
+  0% {
+    transform: scale(1) translate(0%, 0%);
+  }
+  50% {
+    transform: scale(1.10) translate(-1.2%, -0.8%);
+  }
+  100% {
+    transform: scale(1.04) translate(0.8%, -1.2%);
+  }
+}
+
+.hero-zoom-effect {
+  animation: hero-ken-burns 26s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .hero-media-overlay {

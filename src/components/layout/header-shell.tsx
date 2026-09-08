@@ -329,6 +329,40 @@ export function HeaderShell({ hasLogo }: HeaderShellProps) {
           className="ml-auto hidden items-center gap-3 lg:flex"
         >
           {desktopGroups.map((group) => {
+            if (group.title === "Contacto") {
+              return (
+                <div key={group.title} className="relative">
+                  <Link
+                    href={sectionNavigation.conversemos}
+                    className="rounded-full px-3 py-2 text-sm text-muted transition-colors duration-200 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigateToHref(sectionNavigation.conversemos);
+                    }}
+                  >
+                    {group.title}
+                  </Link>
+                </div>
+              );
+            }
+
+            if (group.title === "Quiénes somos") {
+              return (
+                <div key={group.title} className="relative">
+                  <Link
+                    href={sectionNavigation.oficinas!}
+                    className="rounded-full px-3 py-2 text-sm text-muted transition-colors duration-200 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigateToHref(sectionNavigation.oficinas!);
+                    }}
+                  >
+                    {group.title}
+                  </Link>
+                </div>
+              );
+            }
+
             const isOpen = openDesktopGroup === group.title;
 
             return (
@@ -439,6 +473,40 @@ export function HeaderShell({ hasLogo }: HeaderShellProps) {
           className="mx-auto flex max-w-[88rem] flex-col px-5 py-4 sm:px-8"
         >
           {mobileGroups.map((group) => {
+            if (group.title === "Contacto") {
+              return (
+                <div key={group.title} className="border-b border-border-soft/80">
+                  <Link
+                    href={sectionNavigation.conversemos}
+                    className="flex w-full items-center justify-between py-3 text-left text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigateToHref(sectionNavigation.conversemos);
+                    }}
+                  >
+                    <span>{group.title}</span>
+                  </Link>
+                </div>
+              );
+            }
+
+            if (group.title === "Quiénes somos") {
+              return (
+                <div key={group.title} className="border-b border-border-soft/80">
+                  <Link
+                    href={sectionNavigation.oficinas!}
+                    className="flex w-full items-center justify-between py-3 text-left text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigateToHref(sectionNavigation.oficinas!);
+                    }}
+                  >
+                    <span>{group.title}</span>
+                  </Link>
+                </div>
+              );
+            }
+
             const isOpen = openMobileGroup === group.title;
 
             return (

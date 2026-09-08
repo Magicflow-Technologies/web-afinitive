@@ -1,6 +1,6 @@
 export function OfficeLocationSection() {
   return (
-    <section className="office-location-section" aria-label="Ubicación de Afinitive">
+    <section id="oficinas" className="office-location-section scroll-mt-28 sm:scroll-mt-32" aria-label="Ubicación de Afinitive">
       <div className="office-location-map">
         <span className="office-location-block office-location-block--one" aria-hidden="true" />
         <span className="office-location-block office-location-block--two" aria-hidden="true" />

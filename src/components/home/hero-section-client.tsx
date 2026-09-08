@@ -174,7 +174,7 @@ function VideoHero({ onPlaybackFailure, showVideo = true }: VideoHeroProps) {
         <video
           aria-hidden="true"
           autoPlay
-          className="absolute inset-0 size-full object-cover object-center brightness-[0.95] contrast-[1.04] saturate-[1.05]"
+          className="hero-zoom-effect absolute inset-0 size-full object-cover object-center brightness-[0.95] contrast-[1.04] saturate-[1.05]"
           loop
           muted
           onCanPlay={handleCanPlay}
@@ -235,11 +235,11 @@ function HeroCarousel() {
       {heroSlides.map((slide) => (
         <div
           key={slide.src}
-          className="absolute inset-0"
+          className="absolute inset-0 overflow-hidden"
         >
           <Image
             alt={slide.alt}
-            className="object-cover object-center"
+            className="hero-zoom-effect object-cover object-center"
             fill
             preload
             sizes="100vw"
