@@ -22,156 +22,239 @@ const loopedTimeline = Array.from(
 
 function getMilestoneSilhouette(year: string) {
   if (year.includes("2002")) {
-    // Banking & Institutional Columns Architectural Line Art
+    // 2002-2010: Formación del Equipo Fundador - Banca & Finanzas Corporativas (Scotiabank, BBVA, Interbank, Santander, Citi)
     return (
       <svg
-        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
-        fill="none"
+        className="h-40 w-full text-[#8b5149] opacity-80 transition-all duration-300 group-hover:scale-[1.02] group-hover:opacity-100"
         viewBox="0 0 320 160"
-        stroke="currentColor"
-        strokeWidth="0.8"
+        fill="currentColor"
       >
-        <line x1="10" y1="150" x2="310" y2="150" />
-        <rect x="30" y="40" width="120" height="110" />
-        <line x1="30" y1="60" x2="150" y2="60" />
-        <line x1="30" y1="80" x2="150" y2="80" />
-        <line x1="30" y1="100" x2="150" y2="100" />
-        <line x1="30" y1="120" x2="150" y2="120" />
-        <line x1="50" y1="40" x2="50" y2="150" />
-        <line x1="70" y1="40" x2="70" y2="150" />
-        <line x1="90" y1="40" x2="90" y2="150" />
-        <line x1="110" y1="40" x2="110" y2="150" />
-        <line x1="130" y1="40" x2="130" y2="150" />
-        <polygon points="30,40 90,15 150,40" />
-        <rect x="170" y="20" width="100" height="130" />
-        <line x1="170" y1="45" x2="270" y2="45" />
-        <line x1="170" y1="70" x2="270" y2="70" />
-        <line x1="170" y1="95" x2="270" y2="95" />
-        <line x1="170" y1="120" x2="270" y2="120" />
-        <line x1="195" y1="20" x2="195" y2="150" />
-        <line x1="220" y1="20" x2="220" y2="150" />
-        <line x1="245" y1="20" x2="245" y2="150" />
+        {/* Base Ground */}
+        <rect x="10" y="146" width="300" height="6" rx="2" opacity="0.9" />
+        <rect x="20" y="140" width="280" height="6" rx="1" opacity="0.7" />
+
+        {/* Bank Temple Facade */}
+        <polygon points="20,55 95,22 170,55" opacity="0.85" />
+        <rect x="25" y="55" width="140" height="7" opacity="0.9" />
+        
+        {/* Bank Columns */}
+        <rect x="32" y="62" width="14" height="78" rx="1" opacity="0.8" />
+        <rect x="54" y="62" width="14" height="78" rx="1" opacity="0.8" />
+        <rect x="76" y="62" width="14" height="78" rx="1" opacity="0.8" />
+        <rect x="98" y="62" width="14" height="78" rx="1" opacity="0.8" />
+        <rect x="120" y="62" width="14" height="78" rx="1" opacity="0.8" />
+        <rect x="142" y="62" width="14" height="78" rx="1" opacity="0.8" />
+
+        {/* Banking Crest inside pediment */}
+        <circle cx="95" cy="42" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.9" />
+
+        {/* Corporate Banking Executive Silhouettes */}
+        {/* Executive 1 (Left) */}
+        <circle cx="195" cy="95" r="5.5" opacity="0.95" />
+        <path d="M185 140 L187 115 C187 107 203 107 203 115 L205 140 Z" opacity="0.95" />
+
+        {/* Executive 2 (Center Chief) */}
+        <circle cx="220" cy="88" r="6.5" opacity="0.95" />
+        <path d="M208 140 L211 110 C211 100 229 100 229 110 L232 140 Z" opacity="0.95" />
+        {/* Briefcase */}
+        <rect x="233" y="118" width="10" height="7" rx="1" opacity="0.9" />
+
+        {/* Executive 3 (Right) */}
+        <circle cx="248" cy="95" r="5.5" opacity="0.95" />
+        <path d="M238 140 L240 115 C240 107 256 107 256 115 L258 140 Z" opacity="0.95" />
+
+        {/* Growth Bar Chart Background */}
+        <rect x="268" y="110" width="10" height="30" rx="1" opacity="0.4" />
+        <rect x="281" y="95" width="10" height="45" rx="1" opacity="0.5" />
+        <rect x="294" y="75" width="10" height="65" rx="1" opacity="0.6" />
+        <path d="M265 112 L286 92 L299 72 L310 55" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.8" />
+        <polygon points="310,55 303,60 308,66" opacity="0.9" />
+
+        {/* Caption */}
+        <text x="95" y="132" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.9">SCOTIA • BBVA • INTERBANK • CITI</text>
       </svg>
     );
   }
+
   if (year === "2018") {
-    // Boutique Headquarters & Tree Line Architectural Drawing
+    // 2018: Nace Afinitive - Universidad del Pacífico & Boutique Financiera
     return (
       <svg
-        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
-        fill="none"
+        className="h-40 w-full text-[#8b5149] opacity-80 transition-all duration-300 group-hover:scale-[1.02] group-hover:opacity-100"
         viewBox="0 0 320 160"
-        stroke="currentColor"
-        strokeWidth="0.8"
+        fill="currentColor"
       >
-        <line x1="10" y1="150" x2="310" y2="150" />
-        <rect x="40" y="30" width="130" height="120" />
-        <line x1="40" y1="55" x2="170" y2="55" />
-        <line x1="40" y1="80" x2="170" y2="80" />
-        <line x1="40" y1="105" x2="170" y2="105" />
-        <line x1="40" y1="130" x2="170" y2="130" />
-        <line x1="72" y1="30" x2="72" y2="150" />
-        <line x1="105" y1="30" x2="105" y2="150" />
-        <line x1="138" y1="30" x2="138" y2="150" />
-        <path d="M240 150 V90 M240 110 L210 80 M240 100 L265 75 M240 85 L225 65 M240 80 L250 65" />
-        <circle cx="240" cy="55" r="28" strokeDasharray="3 3" />
-        <circle cx="215" cy="75" r="18" strokeDasharray="3 3" />
-        <circle cx="265" cy="70" r="16" strokeDasharray="3 3" />
+        {/* Base Ground */}
+        <rect x="10" y="146" width="300" height="6" rx="2" opacity="0.9" />
+
+        {/* Universidad del Pacífico Main Facade & Arches */}
+        <rect x="20" y="65" width="130" height="81" rx="2" opacity="0.4" />
+        <polygon points="15,65 85,35 155,65" opacity="0.6" />
+        
+        {/* Historic UP Arch Entrance */}
+        <path d="M55 146 V95 Q85 70 115 95 V146 Z" opacity="0.85" />
+        <path d="M68 146 V105 Q85 85 102 105 V146 Z" fill="#ffffff" opacity="0.9" />
+
+        {/* Central Clock Tower */}
+        <rect x="73" y="18" width="24" height="45" opacity="0.75" />
+        <polygon points="70,18 85,5 100,18" opacity="0.85" />
+        <circle cx="85" cy="32" r="5" fill="#ffffff" opacity="0.9" />
+
+        {/* Graduation Cap & Economics Scroll Silhouette */}
+        <path d="M165 90 L185 82 L205 90 L185 98 Z" opacity="0.9" />
+        <rect x="183" y="96" width="4" height="12" opacity="0.9" />
+        <path d="M185 98 C195 100 200 108 200 115" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.9" />
+
+        {/* Flourishing Tree of Tailor-Made Wealth / Boutique Growth */}
+        <path d="M250 146 V95 Q250 90 245 85 M250 120 Q260 105 270 95 M250 110 Q235 100 230 88" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.9" />
+        <circle cx="250" cy="70" r="28" opacity="0.6" />
+        <circle cx="230" cy="78" r="18" opacity="0.5" />
+        <circle cx="270" cy="78" r="18" opacity="0.5" />
+        <circle cx="250" cy="55" r="18" opacity="0.7" />
+
+        {/* Rays of Innovation */}
+        <line x1="250" y1="20" x2="250" y2="30" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+        <line x1="220" y1="30" x2="228" y2="38" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+        <line x1="280" y1="30" x2="272" y2="38" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+
+        <text x="85" y="138" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.95">UNIV. DEL PACÍFICO</text>
+        <text x="250" y="138" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.95">BOUTIQUE AFINITIVE</text>
       </svg>
     );
   }
+
   if (year === "2021") {
-    // Step-Down Skyscraper & Structuring Campus Drawing
+    // 2021: Ampliación de Soluciones - Fiduciarios SMV / SBS & Vehículos de Titulización
     return (
       <svg
-        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
-        fill="none"
+        className="h-40 w-full text-[#8b5149] opacity-80 transition-all duration-300 group-hover:scale-[1.02] group-hover:opacity-100"
         viewBox="0 0 320 160"
-        stroke="currentColor"
-        strokeWidth="0.8"
+        fill="currentColor"
       >
-        <line x1="10" y1="150" x2="310" y2="150" />
-        <rect x="60" y="10" width="110" height="140" />
-        <rect x="170" y="70" width="100" height="80" />
-        <line x1="82" y1="10" x2="82" y2="150" />
-        <line x1="104" y1="10" x2="104" y2="150" />
-        <line x1="126" y1="10" x2="126" y2="150" />
-        <line x1="148" y1="10" x2="148" y2="150" />
-        <line x1="60" y1="30" x2="170" y2="30" />
-        <line x1="60" y1="50" x2="170" y2="50" />
-        <line x1="60" y1="70" x2="170" y2="70" />
-        <line x1="60" y1="90" x2="170" y2="90" />
-        <line x1="60" y1="110" x2="170" y2="110" />
-        <line x1="60" y1="130" x2="170" y2="130" />
-        <line x1="195" y1="70" x2="195" y2="150" />
-        <line x1="220" y1="70" x2="220" y2="150" />
-        <line x1="245" y1="70" x2="245" y2="150" />
-        <line x1="170" y1="90" x2="270" y2="90" />
-        <line x1="170" y1="110" x2="270" y2="110" />
-        <line x1="170" y1="130" x2="270" y2="130" />
+        {/* Base Ground */}
+        <rect x="10" y="146" width="300" height="6" rx="2" opacity="0.9" />
+
+        {/* Bank Safe Vault Door (Left/Center) */}
+        <circle cx="85" cy="82" r="52" opacity="0.4" />
+        <circle cx="85" cy="82" r="42" fill="none" stroke="currentColor" strokeWidth="4" opacity="0.8" />
+        <circle cx="85" cy="82" r="30" opacity="0.6" />
+        <circle cx="85" cy="82" r="12" fill="#ffffff" opacity="0.9" />
+        {/* Vault Spokes */}
+        <line x1="85" y1="35" x2="85" y2="129" stroke="currentColor" strokeWidth="3" opacity="0.8" />
+        <line x1="38" y1="82" x2="132" y2="82" stroke="currentColor" strokeWidth="3" opacity="0.8" />
+        <line x1="52" y1="49" x2="118" y2="115" stroke="currentColor" strokeWidth="3" opacity="0.8" />
+        <line x1="52" y1="115" x2="118" y2="49" stroke="currentColor" strokeWidth="3" opacity="0.8" />
+
+        {/* Regulatory Shield (SMV & SBS) */}
+        <path d="M175 40 L215 24 L255 40 V82 C255 118 215 138 215 138 C215 138 175 118 175 82 Z" opacity="0.75" />
+        <path d="M185 47 L215 34 L245 47 V80 C245 110 215 126 215 126 C215 126 185 110 185 80 Z" fill="#ffffff" opacity="0.9" />
+        {/* Checkmark inside shield */}
+        <path d="M198 78 L210 90 L234 62" stroke="#8b5149" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" opacity="0.95" />
+
+        {/* Securitization High Yield Badge (+2 Digits) */}
+        <rect x="262" y="55" width="48" height="65" rx="4" opacity="0.8" />
+        <rect x="267" y="60" width="38" height="55" rx="2" fill="#ffffff" opacity="0.9" />
+        <text x="286" y="86" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#8b5149" stroke="none">%</text>
+        <text x="286" y="103" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#8b5149" stroke="none">+12%</text>
+
+        <text x="85" y="86" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#8b5149" stroke="none">VAULT</text>
+        <text x="215" y="152" textAnchor="middle" fontSize="8" fontWeight="bold" fill="currentColor" stroke="none" opacity="0.9">SMV & SBS</text>
       </svg>
     );
   }
+
   if (year === "2025") {
-    // Global Financial Skyline & Orbital Grid Line Art
+    // 2025: Internacionalización - Inversión Global & Skylines
     return (
       <svg
-        className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
-        fill="none"
+        className="h-40 w-full text-[#8b5149] opacity-80 transition-all duration-300 group-hover:scale-[1.02] group-hover:opacity-100"
         viewBox="0 0 320 160"
-        stroke="currentColor"
-        strokeWidth="0.8"
+        fill="currentColor"
       >
-        <line x1="10" y1="150" x2="310" y2="150" />
-        <rect x="30" y="40" width="60" height="110" />
-        <line x1="30" y1="65" x2="90" y2="65" />
-        <line x1="30" y1="90" x2="90" y2="90" />
-        <line x1="30" y1="115" x2="90" y2="115" />
-        <line x1="60" y1="40" x2="60" y2="150" />
-        <rect x="100" y="15" width="70" height="135" />
-        <line x1="100" y1="40" x2="170" y2="40" />
-        <line x1="100" y1="65" x2="170" y2="65" />
-        <line x1="100" y1="90" x2="170" y2="90" />
-        <line x1="100" y1="115" x2="170" y2="115" />
-        <line x1="123" y1="15" x2="123" y2="150" />
-        <line x1="147" y1="15" x2="147" y2="150" />
-        <circle cx="235" cy="80" r="45" />
-        <ellipse cx="235" cy="80" rx="45" ry="18" />
-        <ellipse cx="235" cy="80" rx="18" ry="45" />
+        {/* Base Ground */}
+        <rect x="10" y="146" width="300" height="6" rx="2" opacity="0.9" />
+
+        {/* Detailed 3D Globe with Continents & Grid Lines */}
+        <circle cx="85" cy="80" r="54" opacity="0.4" />
+        <ellipse cx="85" cy="80" rx="54" ry="22" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
+        <ellipse cx="85" cy="80" rx="22" ry="54" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
+        <line x1="31" y1="80" x2="139" y2="80" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
+        {/* Continents Silhouettes */}
+        <path d="M55 58 Q65 50 80 52 Q95 45 105 55 Q115 70 100 80 Q85 85 70 75 Z" opacity="0.7" />
+        <path d="M75 95 Q85 90 95 100 Q90 120 80 122 Q70 115 75 95 Z" opacity="0.7" />
+
+        {/* Flight Arc from Globe to Global Skyline */}
+        <path d="M85 30 C130 10 190 20 230 45" stroke="currentColor" strokeWidth="2.5" strokeDasharray="5 3" fill="none" opacity="0.9" />
+        <polygon points="234,48 222,44 227,37" opacity="0.95" />
+
+        {/* Global Financial Skylines (New York / London / Tokyo) */}
+        {/* Empire State Tower */}
+        <rect x="180" y="60" width="22" height="86" opacity="0.6" />
+        <rect x="186" y="35" width="10" height="25" opacity="0.7" />
+        <line x1="191" y1="15" x2="191" y2="35" stroke="currentColor" strokeWidth="2" opacity="0.9" />
+
+        {/* World Trade / Modern Skyscraper */}
+        <polygon points="210,40 226,50 226,146 210,146" opacity="0.8" />
+        <polygon points="226,50 238,58 238,146 226,146" opacity="0.6" />
+
+        {/* International Bank Tower */}
+        <rect x="245" y="70" width="28" height="76" opacity="0.75" />
+        <polygon points="240,70 259,50 278,70" opacity="0.85" />
+
+        {/* High Rise 4 */}
+        <rect x="278" y="85" width="26" height="61" opacity="0.65" />
+        <line x1="278" y1="100" x2="304" y2="100" stroke="#ffffff" strokeWidth="1" opacity="0.6" />
+        <line x1="278" y1="115" x2="304" y2="115" stroke="#ffffff" strokeWidth="1" opacity="0.6" />
+
+        <text x="85" y="142" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.95">GLOBAL ASSETS</text>
+        <text x="245" y="142" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.95">WORLDWIDE</text>
       </svg>
     );
   }
-  // "Hoy" - Flagship Corporate Campus Building Elevation (Exact match to reference photo)
+
+  // Hoy: Excelencia y Compromiso - Sede Camino Real (San Isidro) & Sello de Calidad
   return (
     <svg
-      className="h-36 w-full text-[#8b5149] opacity-35 transition-opacity duration-300 group-hover:opacity-85"
-      fill="none"
+      className="h-40 w-full text-[#8b5149] opacity-80 transition-all duration-300 group-hover:scale-[1.02] group-hover:opacity-100"
       viewBox="0 0 320 160"
-      stroke="currentColor"
-      strokeWidth="0.8"
+      fill="currentColor"
     >
-      <line x1="10" y1="150" x2="310" y2="150" />
-      <rect x="50" y="10" width="100" height="140" />
-      <rect x="150" y="60" width="120" height="90" />
-      <line x1="70" y1="10" x2="70" y2="150" />
-      <line x1="90" y1="10" x2="90" y2="150" />
-      <line x1="110" y1="10" x2="110" y2="150" />
-      <line x1="130" y1="10" x2="130" y2="150" />
-      <line x1="50" y1="28" x2="150" y2="28" />
-      <line x1="50" y1="46" x2="150" y2="46" />
-      <line x1="50" y1="64" x2="150" y2="64" />
-      <line x1="50" y1="82" x2="150" y2="82" />
-      <line x1="50" y1="100" x2="150" y2="100" />
-      <line x1="50" y1="118" x2="150" y2="118" />
-      <line x1="50" y1="136" x2="150" y2="136" />
-      <line x1="150" y1="80" x2="270" y2="80" />
-      <line x1="150" y1="100" x2="270" y2="100" />
-      <line x1="150" y1="120" x2="270" y2="120" />
-      <line x1="150" y1="138" x2="270" y2="138" />
-      <line x1="174" y1="60" x2="174" y2="150" />
-      <line x1="198" y1="60" x2="198" y2="150" />
-      <line x1="222" y1="60" x2="222" y2="150" />
-      <line x1="246" y1="60" x2="246" y2="150" />
+      {/* Base Ground */}
+      <rect x="10" y="146" width="300" height="6" rx="2" opacity="0.9" />
+
+      {/* Sede Av. Camino Real 456, San Isidro - Modern Luxury Tower */}
+      <rect x="25" y="25" width="85" height="121" rx="2" opacity="0.8" />
+      {/* Glass Curtain Panels */}
+      <rect x="32" y="32" width="71" height="107" fill="#ffffff" opacity="0.25" />
+      <line x1="49" y1="25" x2="49" y2="146" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
+      <line x1="67" y1="25" x2="67" y2="146" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
+      <line x1="85" y1="25" x2="85" y2="146" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
+      <line x1="25" y1="50" x2="110" y2="50" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+      <line x1="25" y1="72" x2="110" y2="72" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+      <line x1="25" y1="94" x2="110" y2="94" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+      <line x1="25" y1="116" x2="110" y2="116" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+
+      {/* San Isidro Financial Center Adjacent Building */}
+      <rect x="115" y="55" width="70" height="91" rx="2" opacity="0.5" />
+      <line x1="138" y1="55" x2="138" y2="146" stroke="currentColor" strokeWidth="1.5" opacity="0.6" />
+      <line x1="161" y1="55" x2="161" y2="146" stroke="currentColor" strokeWidth="1.5" opacity="0.6" />
+
+      {/* Premium Seal of Excellence & Trust (Right) */}
+      <circle cx="245" cy="68" r="38" opacity="0.85" />
+      <circle cx="245" cy="68" r="32" fill="#ffffff" opacity="0.9" />
+      <circle cx="245" cy="68" r="28" fill="none" stroke="#8b5149" strokeWidth="1.5" strokeDasharray="3 2" opacity="0.9" />
+      
+      {/* 5 Stars of Quality */}
+      <polygon points="245,46 247,52 253,52 248,56 250,62 245,58 240,62 242,56 237,52 243,52" fill="#8b5149" opacity="0.95" />
+      
+      {/* Excellence Seal Ribbon Tails */}
+      <path d="M228 95 L245 84 L262 95 V138 L245 128 L228 138 Z" opacity="0.9" />
+      <path d="M234 100 L245 92 L256 100 V130 L245 122 L234 130 Z" fill="#ffffff" opacity="0.9" />
+
+      <text x="245" y="75" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#8b5149" stroke="none">AFINITIVE</text>
+      <text x="245" y="83" textAnchor="middle" fontSize="6.5" fontWeight="bold" fill="#8b5149" stroke="none">EXCELENCIA</text>
+
+      <text x="67" y="142" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.95">CAMINO REAL 456</text>
     </svg>
   );
 }
