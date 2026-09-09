@@ -13,9 +13,9 @@ export type TeamMember = {
 
 export const teamMembers: TeamMember[] = [
   {
-    id: "ricardo-bertalmio-ruibal",
+    id: "ricardo-bertalmio",
     firstName: "Ricardo",
-    lastName: "Bertalmio Ruibal",
+    lastName: "Bertalmio",
     role: "CEO & Socio Fundador",
     imageSrc: "/images/team/ricardo-bertalmio.png",
     profileTitle: "CEO & Socio Fundador",
