@@ -7,19 +7,19 @@ export type ClientGroup = {
 
 export const clientGroups: ClientGroup[] = [
   {
-    alt: "Familia conversando en una residencia contemporánea junto a una ventana",
+    alt: "Fotografía arquitectónica minimalista y monocromática representando serenidad, legado y preservación patrimonial familiar",
     id: "personas-y-familias",
     title: "Personas y familias",
     imageSrc: "/images/who-we-serve/personas-y-familias.png",
   },
   {
-    alt: "Profesionales reunidos en un espacio privado de asesoría",
+    alt: "Fotografía arquitectónica monocromática de estructuras geométricas limpias representando solidez institucional y disciplina",
     id: "empresas-e-instituciones",
     title: "Empresas e instituciones",
     imageSrc: "/images/who-we-serve/instituciones-intermediarias.png",
   },
   {
-    alt: "Ejecutivos conversando en una sala corporativa con ventanales",
+    alt: "Composición artística minimalista y monocromática representando visión global, gobernanza y perspectiva patrimonial de largo plazo",
     id: "family-office-y-gestores",
     title: "Family Office y gestores",
     imageSrc: "/images/who-we-serve/fondos-privados.png",
