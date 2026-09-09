@@ -40,33 +40,31 @@ export function RegulatorsSectionClient({
             operaciones.
           </p>
         </div>
-        <div className="regulators-grid grid gap-6 lg:grid-cols-2 lg:gap-8">
+
+        <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
           {regulators.map((regulator) => (
             <article
               key={regulator.name}
-              tabIndex={0}
-              className="regulator-card scroll-reveal-stagger group"
+              className="scroll-reveal-stagger flex flex-col items-center justify-between gap-6 rounded-xl border border-border-soft/80 bg-surface p-6 sm:p-8 text-center shadow-sm"
             >
               {regulator.hasImage ? (
-                <div className="regulator-card-face regulator-card-logo">
-                  <div className="regulator-card-image">
-                    <Image
-                      src={regulator.imageSrc}
-                      alt={regulator.name}
-                      fill
-                      unoptimized={regulator.imageSrc.endsWith(".ico")}
-                      sizes="(max-width: 639px) 280px, 400px"
-                      className="object-contain p-1.5"
-                    />
-                  </div>
+                <div className="relative h-24 w-full max-w-[16rem] flex items-center justify-center">
+                  <Image
+                    src={regulator.imageSrc}
+                    alt={regulator.name}
+                    fill
+                    unoptimized={regulator.imageSrc.endsWith(".ico")}
+                    sizes="320px"
+                    className="object-contain grayscale contrast-125 brightness-95"
+                  />
                 </div>
               ) : null}
 
-              <div className="regulator-card-face regulator-card-copy">
-                <h3 className="text-[1.35rem] leading-tight text-foreground sm:text-[1.5rem]">
+              <div className="flex flex-col items-center gap-4">
+                <h3 className="text-xs sm:text-sm font-bold tracking-wider text-foreground uppercase">
                   {regulator.name}
                 </h3>
-                <p className="text-sm leading-7 text-muted sm:text-[0.98rem]">
+                <p className="text-xs sm:text-sm leading-relaxed text-muted text-center max-w-xl">
                   {regulator.description}
                 </p>
               </div>

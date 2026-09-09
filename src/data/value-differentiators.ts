@@ -7,26 +7,28 @@ export type ValueDifferentiator = {
 export const valueDifferentiators: ValueDifferentiator[] = [
   {
     aspect: "Asesoría Profesional",
-    traditional: "Venta de productos estandarizados y comerciales.",
-    afinitive: "Objetiva, integral y especializada.",
+    traditional: "Venta masiva de productos comerciales estandarizados orientados a metas corporativas.",
+    afinitive: "Objetiva, 100% independiente y enfocada en preservar y multiplicar el patrimonio.",
   },
   {
     aspect: "Transparencia",
-    traditional: "Costos ocultos. Falta de claridad en riesgos y estructura.",
-    afinitive:
-      "Alta transparencia en estructura, riesgos y proveedores.",
+    traditional: "Costos ocultos, estructuras opacas y poca claridad en condiciones de riesgo.",
+    afinitive: "Transparencia absoluta en comisiones, estructura de costos, riesgos y proveedores.",
   },
   {
-    aspect: "Conflicto de interés",
-    traditional:
-      "Incentivos por cuota de colocación. Venta de productos de marca propia.",
-    afinitive: "Arquitectura abierta y selección de proveedores.",
+    aspect: "Conflicto de Interés",
+    traditional: "Priorización de productos de marca propia e incentivos por cuota de colocación.",
+    afinitive: "Arquitectura 100% abierta y selección imparcial de los mejores proveedores.",
   },
   {
-    aspect: "Diseño de solución",
-    traditional:
-      "Enfoque en campaña corporativa (rentabilidad o producto del mes).",
-    afinitive:
-      "Tailor – Made según objetivos, plazo, moneda, garantías y riesgo.",
+    aspect: "Diseño de Solución",
+    traditional: "Campañas corporativas estandarizadas y productos del mes empaquetados.",
+    afinitive: "Estrategia 100% Tailor-Made a la medida de objetivos, plazo, moneda y perfil de riesgo.",
+  },
+  {
+    aspect: "Acompañamiento",
+    traditional: "Atención impersonal, rotación constante de ejecutivos y respuesta reactiva.",
+    afinitive: "Relación estratégica de largo plazo liderada directamente por socios sénior.",
   },
 ];
+

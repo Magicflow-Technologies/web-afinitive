@@ -37,7 +37,7 @@ export function TeamCarouselClient({ members, onOpenProfile }: TeamCarouselClien
               {hasImage ? (
                 <Image
                   alt={`Retrato de ${fullName}`}
-                  className="object-cover object-center"
+                  className={`object-cover object-center ${member.imageClassName ?? ""}`}
                   fill
                   onError={() =>
                     setBrokenImages((currentImages) => ({

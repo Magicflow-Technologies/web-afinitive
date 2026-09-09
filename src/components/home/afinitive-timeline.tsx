@@ -250,10 +250,6 @@ function getMilestoneSilhouette(year: string) {
       {/* Excellence Seal Ribbon Tails */}
       <path d="M228 95 L245 84 L262 95 V138 L245 128 L228 138 Z" opacity="0.9" />
       <path d="M234 100 L245 92 L256 100 V130 L245 122 L234 130 Z" fill="#ffffff" opacity="0.9" />
-
-      <text x="245" y="75" textAnchor="middle" fontSize="7.5" fontWeight="bold" fill="#8b5149" stroke="none">AFINITIVE</text>
-      <text x="245" y="83" textAnchor="middle" fontSize="6.5" fontWeight="bold" fill="#8b5149" stroke="none">EXCELENCIA</text>
-
       <text x="67" y="142" textAnchor="middle" fontSize="7" fontWeight="bold" fill="#ffffff" stroke="none" opacity="0.95">CAMINO REAL 456</text>
     </svg>
   );
@@ -268,8 +264,10 @@ export function AfinitiveTimeline() {
   const [isInitialized, setIsInitialized] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
-  const [isPaused, setIsPaused] = useState(false);
+  const [isManualPaused, setIsManualPaused] = useState(false);
+  const [isClickPaused, setIsClickPaused] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+
   const startXRef = useRef(0);
   const scrollLeftRef = useRef(0);
   const hasMovedRef = useRef(false);
@@ -305,7 +303,7 @@ export function AfinitiveTimeline() {
     const viewport = viewportRef.current;
     if (!viewport) return;
     setIsDragging(true);
-    setIsPaused(true);
+    setIsClickPaused(true);
     startXRef.current = e.pageX - viewport.offsetLeft;
     scrollLeftRef.current = viewport.scrollLeft;
     hasMovedRef.current = false;
@@ -326,13 +324,14 @@ export function AfinitiveTimeline() {
 
   const handleMouseUpOrLeave = () => {
     setIsDragging(false);
+    setIsClickPaused(false);
   };
 
   const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     const viewport = viewportRef.current;
     if (!viewport) return;
     setIsDragging(true);
-    setIsPaused(true);
+    setIsClickPaused(true);
     startXRef.current = e.touches[0].pageX - viewport.offsetLeft;
     scrollLeftRef.current = viewport.scrollLeft;
     hasMovedRef.current = false;
@@ -408,14 +407,10 @@ export function AfinitiveTimeline() {
     };
   }, []);
 
+  const isScrollActive = !isManualPaused && !isClickPaused && !isDragging;
+
   useEffect(() => {
-    if (
-      prefersReducedMotion ||
-      !isInViewport ||
-      !isInitialized ||
-      isPaused ||
-      isDragging
-    ) {
+    if (!isScrollActive) {
       return;
     }
 
@@ -462,43 +457,12 @@ export function AfinitiveTimeline() {
     return () => {
       cancelAnimationFrame(animationFrame);
     };
-  }, [isInViewport, isInitialized, prefersReducedMotion, isPaused, isDragging]);
+  }, [isScrollActive]);
+
+  const isPausedState = isManualPaused || isClickPaused || isDragging;
 
   return (
     <div className="timeline-shell relative overflow-hidden">
-      <div className="mx-auto flex max-w-[88rem] items-center justify-between px-5 py-3 sm:px-8 lg:px-12">
-        <div className="flex items-center gap-2 text-xs text-muted">
-          <span className={`inline-block h-2 w-2 rounded-full ${isPaused ? "bg-amber-600" : "bg-[#8b5149] animate-pulse"}`} />
-          <span>
-            {isPaused
-              ? "Modo manual: arrastra para navegar"
-              : "Desplazamiento automático: haz clic o arrastra para pausar"}
-          </span>
-        </div>
-
-        <button
-          type="button"
-          onClick={() => setIsPaused((prev) => !prev)}
-          className="inline-flex items-center gap-2 rounded-full border border-border-soft/80 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm transition-colors hover:bg-surface-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted"
-        >
-          {isPaused ? (
-            <>
-              <svg className="h-3.5 w-3.5 fill-current" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-              <span>Reanudar</span>
-            </>
-          ) : (
-            <>
-              <svg className="h-3.5 w-3.5 fill-current" viewBox="0 0 24 24">
-                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
-              </svg>
-              <span>Pausar</span>
-            </>
-          )}
-        </button>
-      </div>
-
       <div
         ref={viewportRef}
         aria-label="Línea de tiempo Afinitive. Arrastra con el mouse para navegar."

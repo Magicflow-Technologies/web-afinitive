@@ -21,6 +21,7 @@
 }
 
 @theme inline {
+  --color-brand: var(--color-brand);
   --color-background: var(--background-main);
   --color-surface: var(--surface-warm);
   --color-foreground: var(--text-charcoal);
@@ -1842,23 +1843,23 @@ main > section.hero-blackout {
 
 .value-differential-aspect-header,
 .value-differential-traditional-header {
-  width: 30.5%;
+  width: 28%;
   padding: 1.45rem 1.75rem;
   background: var(--color-surface-soft);
-  color: var(--color-body);
-  font-size: 0.74rem;
-  font-weight: 600;
+  color: var(--color-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .value-differential-brand-header {
-  width: 39%;
+  width: 44%;
   padding: 1.3rem 1.75rem;
-  border-right: 1px solid color-mix(in srgb, var(--color-brand) 24%, transparent) !important;
-  border-left: 1px solid color-mix(in srgb, var(--color-brand) 24%, transparent) !important;
-  background: var(--color-surface-soft);
-  color: var(--color-heading);
+  border-right: 2px solid var(--color-brand) !important;
+  border-left: 2px solid var(--color-brand) !important;
+  background: var(--color-brand) !important;
+  color: #ffffff !important;
 }
 
 .value-differential-brand-heading,
@@ -1872,7 +1873,7 @@ main > section.hero-blackout {
 .value-differential-brand-heading {
   min-height: 1.8rem;
   justify-content: center;
-  color: var(--color-heading);
+  color: #ffffff !important;
   font-family: var(--font-afinitive-serif), Georgia, serif;
   font-size: 1.4rem;
 }
@@ -1902,17 +1903,17 @@ main > section.hero-blackout {
 
 .value-differential-brand-cell {
   padding: 1.55rem 1.75rem;
-  border-right: 1px solid color-mix(in srgb, var(--color-brand) 24%, transparent) !important;
-  border-left: 1px solid color-mix(in srgb, var(--color-brand) 24%, transparent) !important;
-  background: var(--color-surface-soft);
-  color: var(--color-body);
+  border-right: 2px solid color-mix(in srgb, var(--color-brand) 35%, transparent) !important;
+  border-left: 2px solid color-mix(in srgb, var(--color-brand) 35%, transparent) !important;
+  background: color-mix(in srgb, var(--color-brand) 6%, #ffffff) !important;
+  color: var(--color-heading);
   font-size: 1rem;
   line-height: 1.7;
 }
 
 .value-differential-brand-response {
   align-items: flex-start;
-  color: var(--color-body);
+  color: var(--color-heading);
 }
 
 .value-differential-brand-response svg {
@@ -1922,9 +1923,9 @@ main > section.hero-blackout {
 
 .value-differential-traditional-cell {
   padding: 1.55rem 1.75rem;
-  background: var(--color-surface-soft);
+  background: var(--color-surface);
   color: var(--color-body);
-  font-size: 1rem;
+  font-size: 0.96rem;
   line-height: 1.7;
 }
 
@@ -2505,18 +2506,7 @@ main > section.hero-blackout {
   color: var(--color-on-brand-muted) !important;
 }
 
-.team-profile-dialog h3,
-.team-profile-dialog h4,
-.team-profile-dialog p,
-.team-profile-dialog li {
-  color: var(--color-on-brand) !important;
-}
-
-.team-profile-dialog h4,
-.team-profile-dialog p.text-muted,
-.team-profile-dialog li.text-muted {
-  color: var(--color-on-brand-muted) !important;
-}
+/* team profile dialog uses clean light theme styling */
 
 .team-carousel-control {
   display: inline-flex;

@@ -4,6 +4,7 @@ export type TeamMember = {
   lastName: string;
   role: string;
   imageSrc: string;
+  imageClassName?: string;
   profileTitle: string;
   locations: string;
   biography: string[];
@@ -18,6 +19,7 @@ export const teamMembers: TeamMember[] = [
     lastName: "Bertalmio",
     role: "CEO & Socio Fundador",
     imageSrc: "/images/team/ricardo-bertalmio.png",
+    imageClassName: "scale-[1.12] object-[center_18%]",
     profileTitle: "CEO & Socio Fundador",
     locations: "Lima • Bogotá • Santiago",
     biography: [
@@ -35,19 +37,20 @@ export const teamMembers: TeamMember[] = [
     id: "renzo-castillo",
     firstName: "Renzo",
     lastName: "Castillo",
-    role: "Managing Partner",
+    role: "Independent Board Director",
     imageSrc: "/images/team/renzo-castillo.png",
-    profileTitle: "Managing Partner",
-    locations: "San Francisco • New York",
+    profileTitle: "Independent Board Director",
+    locations: "San Francisco • New York • Lima",
     biography: [
-      "Aporta una perspectiva global moldeada por la intersección de Silicon Valley y Wall Street, identificando y aprovechando tendencias emergentes, mercados privados y estrategias de asignación de capital para clientes de alto patrimonio.",
-      "Lidera el posicionamiento de portafolios, el desarrollo de oportunidades y la identificación de cambios estructurales que impactan la preservación y creación de valor patrimonial en el largo plazo.",
-      "Su enfoque combina disciplina de ejecución, visión estratégica y la capacidad de anticipar oportunidades antes de que alcancen consenso generalizado.",
+      "Renzo Castillo incorpora al Directorio una perspectiva cross-border, desarrollada a través de su trayectoria profesional en Estados Unidos y América Latina.",
+      "Su experiencia abarca M&A, private equity, capital allocation y fundraising, así como la creación, escalamiento y exits de empresas en industrias altamente competitivas.",
+      "Con base en Silicon Valley, aporta además una perspectiva estratégica sobre el impacto de la inteligencia artificial en el diseño de modelos operativos, la calidad de las decisiones empresariales y la formación de ventajas competitivas.",
+      "Desde el Directorio, contribuye con criterio independiente a las decisiones de inversión, crecimiento y alianzas estratégicas, priorizando la disciplina institucional y la creación de valor a largo plazo.",
     ],
     education: [
-      "Economista, University of California, Berkeley.",
-      "MBA, The Wharton School at the University of Pennsylvania.",
-      "Executive Education in Digital Transformation, Stanford University.",
+      "B.A. in Economics, University of California, Berkeley",
+      "MBA, The Wharton School, University of Pennsylvania",
+      "Executive Education in Digital Transformation, Stanford University",
     ],
     leadership: [],
   },
@@ -168,7 +171,7 @@ export const teamMembers: TeamMember[] = [
     firstName: "Kebor",
     lastName: "Montes",
     role: "Director, AIS Financial Group",
-    imageSrc: "/images/team/kebor-montes.jpg",
+    imageSrc: "/images/team/kebor.jpg",
     profileTitle: "Director, AIS Financial Group",
     locations: "Suiza • Europa",
     biography: [
