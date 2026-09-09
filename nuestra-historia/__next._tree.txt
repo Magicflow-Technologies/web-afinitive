@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/24q8vuzlh6xhp.css","style"]
+:HL["/_next/static/media/georgia-s.p.2mck0j1lepp3x.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/_next/static/media/georgiab-s.p.22pk7a7ek15kh.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/_next/static/media/segoeui-s.p.20m_uf-vm2_p4.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/_next/static/media/segoeuib-s.p.02iyngn1l5ydf.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/_next/static/media/segoeuil-s.p.0lvd5jgkgsaoh.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"nuestra-historia","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"WQRSz2oXlG97bVaiP8dvF"}
