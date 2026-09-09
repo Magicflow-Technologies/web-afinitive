@@ -7,21 +7,21 @@ export type ClientGroup = {
 
 export const clientGroups: ClientGroup[] = [
   {
-    alt: "Fotografía arquitectónica minimalista y monocromática representando serenidad, legado y preservación patrimonial familiar",
+    alt: "Fotografía minimalista de textura de piedra representando serenidad, solidez y preservación patrimonial",
     id: "personas-y-familias",
     title: "Personas y familias",
-    imageSrc: "/images/who-we-serve/personas-y-familias.png",
+    imageSrc: "/images/who-we-serve/piedra.jpeg",
   },
   {
-    alt: "Fotografía arquitectónica monocromática de estructuras geométricas limpias representando solidez institucional y disciplina",
+    alt: "Fotografía minimalista de muro arquitectónico representando disciplina y estructura institucional",
     id: "empresas-e-instituciones",
     title: "Empresas e instituciones",
-    imageSrc: "/images/who-we-serve/instituciones-intermediarias.png",
+    imageSrc: "/images/who-we-serve/muro.jpeg",
   },
   {
-    alt: "Composición artística minimalista y monocromática representando visión global, gobernanza y perspectiva patrimonial de largo plazo",
+    alt: "Fotografía minimalista de superficie de agua representando fluidez, visión global y perspectiva de largo plazo",
     id: "family-office-y-gestores",
     title: "Family Office y gestores",
-    imageSrc: "/images/who-we-serve/fondos-privados.png",
+    imageSrc: "/images/who-we-serve/agua.jpeg",
   },
 ];
