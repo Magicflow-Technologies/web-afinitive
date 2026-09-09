@@ -68,7 +68,7 @@ export function NewProjectsSection() {
 
   return (
     <section
-      id="nuevos-proyectos"
+      id="nuestras-soluciones"
       ref={sectionRef}
       aria-labelledby="new-projects-title"
       data-revealed={isRevealed}
@@ -83,7 +83,7 @@ export function NewProjectsSection() {
               id="new-projects-title"
               className="text-3xl leading-tight text-foreground sm:text-[2.45rem]"
             >
-              Nuevos Proyectos
+              Nuestras Soluciones
             </h2>
           </div>
           <span className="text-[0.72rem] tracking-[0.28em] text-muted uppercase">
@@ -98,9 +98,6 @@ export function NewProjectsSection() {
                 <div className="new-project-card-header">
                   <span className="new-project-icon">
                     <ProjectIcon index={index} />
-                  </span>
-                  <span className="new-project-number">
-                    {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
                 <div className="new-project-card-content">
