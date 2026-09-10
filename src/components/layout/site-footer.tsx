@@ -12,7 +12,7 @@ import {
 function FooterLink({ item }: { item: FooterNavigationLink }) {
   if (!item.href) {
     return (
-      <span aria-disabled="true" className="site-footer-link text-sm leading-7 text-justify block">
+      <span aria-disabled="true" className="site-footer-link text-sm leading-7 text-left block">
         {item.label}
       </span>
     );
@@ -21,7 +21,7 @@ function FooterLink({ item }: { item: FooterNavigationLink }) {
   return (
     <Link
       href={item.href}
-      className="site-footer-link text-sm leading-7 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted text-justify block"
+      className="site-footer-link text-sm leading-7 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-muted text-left block"
     >
       {item.label}
     </Link>
@@ -64,7 +64,7 @@ export function SiteFooter() {
 
   return (
     <footer className="site-footer [--text-charcoal:var(--color-heading)] [--text-muted:var(--color-body)]">
-      <div className="site-footer-inner mx-auto grid w-full max-w-[98rem] gap-10 px-5 py-14 sm:px-8 xl:grid-cols-[minmax(13rem,0.55fr)_minmax(0,2.8fr)_minmax(13.5rem,0.65fr)] xl:gap-14 lg:px-12 lg:py-20">
+      <div className="site-footer-inner mx-auto grid w-full max-w-[98rem] gap-10 px-5 py-14 sm:px-8 xl:grid-cols-[minmax(14rem,0.6fr)_minmax(0,2.3fr)_minmax(18.5rem,0.9fr)] xl:gap-14 lg:px-12 lg:py-20">
         <div className="site-footer-brand flex flex-col justify-start">
           {hasLogo ? (
             <Image
@@ -79,7 +79,7 @@ export function SiteFooter() {
               Afinitive
             </span>
           )}
-          <p className="site-footer-statement text-justify">
+          <p className="site-footer-statement text-left">
             Preservando tu patrimonio
           </p>
         </div>
@@ -90,7 +90,7 @@ export function SiteFooter() {
         >
           {footerNavigation.map((category) => (
             <div key={category.title} className="space-y-4">
-              <h2 className="site-footer-heading text-[0.82rem] tracking-[0.16em] uppercase text-justify">
+              <h2 className="site-footer-heading text-[0.82rem] tracking-[0.16em] uppercase text-left">
                 {category.title}
               </h2>
               <ul className="space-y-2">
@@ -111,7 +111,7 @@ export function SiteFooter() {
             </svg>
             <div>
               <span>Teléfono</span>
-              <strong>+51 902 821 992</strong>
+              <strong className="whitespace-nowrap">+51 902 821 992</strong>
             </div>
           </div>
           <div className="site-footer-contact-item">
@@ -121,7 +121,7 @@ export function SiteFooter() {
             </svg>
             <div>
               <span>Correo</span>
-              <strong>contacto@afinitive.com.pe</strong>
+              <strong className="whitespace-nowrap">contacto@afinitive.com.pe</strong>
             </div>
           </div>
           <div className="site-footer-contact-item">

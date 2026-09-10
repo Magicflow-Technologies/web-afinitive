@@ -105,17 +105,12 @@ export function ValueDifferentialTable({
       <div className="mx-auto flex w-full max-w-[88rem] flex-col gap-6 px-5 py-10 sm:px-8 sm:py-12 lg:gap-8 lg:px-12 lg:py-14">
         <div className="flex max-w-4xl flex-col gap-4">
           <span className="h-px w-16 bg-accent-muted/55" aria-hidden="true" />
-          <div className="flex flex-wrap items-center gap-3">
-            <h2
-              id="value-differential-title"
-              className="text-4xl leading-tight text-foreground sm:text-[2.7rem] lg:text-[3rem]"
-            >
-              El valor diferencial
-            </h2>
-            <span className="inline-flex items-center rounded-full border border-brand/30 bg-brand/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand">
-              VS Mercado Tradicional
-            </span>
-          </div>
+          <h2
+            id="value-differential-title"
+            className="text-4xl leading-tight text-foreground sm:text-[2.7rem] lg:text-[3rem]"
+          >
+            El valor diferencial
+          </h2>
           <p className="text-base leading-relaxed text-muted sm:text-[1.05rem]">
             Una comparación objetiva entre el modelo independiente y a medida de
             Afinitive frente a las soluciones estandarizadas de la banca y el
